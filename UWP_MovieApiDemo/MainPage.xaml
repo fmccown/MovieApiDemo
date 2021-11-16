@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <TextBlock Text="IMDB ID:" Margin="10" />
+        <TextBlock Text="IMDb ID:" Margin="10" />
         <TextBox Name="imdbIdTextBox" Margin="10" HorizontalAlignment="Left" Text="tt0076759" TextWrapping="NoWrap" VerticalAlignment="Top"/>
         <Button Name="fetchButton" Margin="10" Content="Fetch Movie" Click="fetchButton_Click"/>
         <ListView x:Name="movieListView" Margin="10" HorizontalAlignment="Left" Height="150" Width="200"
