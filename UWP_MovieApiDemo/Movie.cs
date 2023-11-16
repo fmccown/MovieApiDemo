@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace UWP_MovieApiDemo
 {
@@ -22,8 +23,12 @@ namespace UWP_MovieApiDemo
         public string Poster { get; set; }
         public List<Rating> Ratings { get; set; }        
         public string Metascore { get; set; }
-        public double imdbRating { get; set; }        
-        public string imdbVotes { get; set; }
+
+        [JsonProperty(PropertyName = "imdbRating")]
+        public double ImdbRating { get; set; }
+
+        [JsonProperty(PropertyName = "imdbVotes")]
+        public string ImdbVotes { get; set; }
     }
 
     public class Rating

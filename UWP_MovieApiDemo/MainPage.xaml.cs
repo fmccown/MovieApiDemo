@@ -12,7 +12,7 @@ namespace UWP_MovieApiDemo
     {
         const string ApiKey = "YOUR_API_KEY";
 
-        private ObservableCollection<Movie> movieList;
+        private readonly ObservableCollection<Movie> movieList;
 
         public MainPage()
         {
